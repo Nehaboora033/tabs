@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+}
+
+.min-h-100 {
+    min-height: 100vh;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.x-center {
+    align-items: center;
+}
+
+.y-center {
+    justify-content: center;
+}
+
+.heading {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 100%;
+    text-align: center;
+    color: #808080;
+    margin-bottom: 43px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+
+}
+
+.card {
+    max-width: 540px;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 0px 11px 44px -10px #00000040;
+    padding: 30px 25px;
+}
+
+.content {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #808080;
+    max-width: 490px;
+}
+
+.content p {
+    margin-bottom: 10px;
+}
+
+.tab-buttons button {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 100%;
+    background-color: unset;
+    border: none;
+    margin-right: 22px;
+    gap: 20px;
+    color: #808080;
+    padding: 0 11px 13px;
+    position: relative;
+}
+
+.tab-buttons {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #808080;
+}
+
+.content {
+    display: none;
+
+}
+
+.content.active {
+    display: block;
+}
+
+.tab-buttons button.active {
+    color: black;
+}
+
+.tab-buttons button.active::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    border: 1px solid #128DFF;
+}
