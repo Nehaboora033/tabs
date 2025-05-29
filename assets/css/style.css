@@ -81,7 +81,21 @@
 
 .content {
     display: none;
+    animation: moving 0.5s ease;
+    animation-duration: 1s;
+    animation-delay:0.2s;
+}
 
+@keyframes moving {
+    0% {
+        transform: translateX(50px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
 }
 
 .content.active {
@@ -99,4 +113,5 @@
     left: 0;
     width: 100%;
     border: 1px solid #128DFF;
+    transition: all 0.3ms ease-in-out;
 }
